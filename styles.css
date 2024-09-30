@@ -25,7 +25,6 @@ body {
     padding: 20px;
 }
 
-/* Header Styling */
 header {
     background-color: #63B3ED;
     color: #FFFFFF;
@@ -46,7 +45,6 @@ header h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Main Content Styling */
 main article {
     margin-bottom: 40px;
 }
@@ -67,7 +65,7 @@ main img {
 }
 
 aside {
-    grid-column: 2 / span 1; /* Sidebar column */
+    grid-column: 1 / span 1; 
     padding: 20px;
 }
 
@@ -79,13 +77,13 @@ aside h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-aside h3:nth-of-type(1) { /* About heading */
-    color: #000000;
+.about-heading {
+    color: #000000; 
 }
 
-aside h3:nth-of-type(2), /* Social Media & Archives headings */
-aside h3:nth-of-type(3) {
-    color: #48BB78;
+.social-media-heading,
+.archives-heading {
+    color: #48BB78; 
 }
 
 aside p {
@@ -103,7 +101,7 @@ footer {
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
-    grid-column: 1 / span 2; /* Footer spans across both columns */
+    grid-column: 1 / span 2; 
 }
 
 .container {
