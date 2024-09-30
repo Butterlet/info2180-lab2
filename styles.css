@@ -66,9 +66,8 @@ main img {
     width: 200px;
 }
 
-/* Sidebar Styling */
 aside {
-    grid-column: 1 / span 1; /* Sidebar column */
+    grid-column: 2 / span 1; /* Sidebar column */
     padding: 20px;
 }
 
@@ -99,7 +98,6 @@ aside ul li a {
     text-decoration: none;
 }
 
-/* Footer Styling */
 footer {
     background-color: #2C5282;
     color: #FFFFFF;
@@ -108,7 +106,6 @@ footer {
     grid-column: 1 / span 2; /* Footer spans across both columns */
 }
 
-/* Grid Layout */
 .container {
     grid-template-areas:
         "header header"
