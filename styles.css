@@ -1,0 +1,133 @@
+header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar + Main content */
+    grid-template-rows: auto 1fr auto; /* Header + Main + Footer */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header img {
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Main Content Styling */
+main article {
+    margin-bottom: 40px;
+}
+
+main h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+main p {
+    color: #718096;
+}
+
+main img {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+
+/* Sidebar Styling */
+aside {
+    grid-column: 1 / span 1; /* Sidebar column */
+    padding: 20px;
+}
+
+aside section {
+    margin-bottom: 30px;
+}
+
+aside h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside h3:nth-of-type(1) { /* About heading */
+    color: #000000;
+}
+
+aside h3:nth-of-type(2), /* Social Media & Archives headings */
+aside h3:nth-of-type(3) {
+    color: #48BB78;
+}
+
+aside p {
+    background-color: #E2E8F0;
+    padding: 15px;
+}
+
+aside ul li a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2; /* Footer spans across both columns */
+}
+
+/* Grid Layout */
+.container {
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
